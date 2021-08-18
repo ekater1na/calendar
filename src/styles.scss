@@ -86,8 +86,8 @@ table th {
 }
 
 .btn-primary {
-  bottom: var(--primary-color);
-  color: var(--base-color)
+  background: var(--primary-color);
+  color: var(--base-color);
 }
 
 .text-center {
