@@ -43,4 +43,9 @@ export class TasksService {
       .pipe(map(res => ({...task, id: res.name}))
       )
   }
+
+  remove(task: Task): Observable<void> {
+    return this.http
+      .delete<void>(`${TasksService.url}/${task.date}/${task.id}.json`)
+  }
 }
